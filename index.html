@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
     <style>
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
-$itemSize: 40px;
-
 body {
     background-color: #222222;
     color: white;
@@ -43,19 +42,17 @@ h2 {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: $itemSize;
-    height: $itemSize;
+    width: 40px;
+    height: 40px;
     background-color: white;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
-    line-height: $itemSize;
+    line-height: 40px;
 }
 
 i {
-    font-size: 0.6 * $itemSize;
+    font-size: 24px;
     color: #222222;
 }
     </style>
@@ -68,6 +65,9 @@ i {
     <h2>Drag the menu where you want!</h2>
 </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script>
 var timeOut;
 
